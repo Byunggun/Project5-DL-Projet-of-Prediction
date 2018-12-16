@@ -1,0 +1,109 @@
+﻿<UNHCR Refugee Data : Data on Uprooted Populations and Asylum Processing>
+
+*출처:https://www.kaggle.com/unitednations/refugee-data/home
+*요약:
+-Context:
+The mass movement of uprooted people is a highly charged geopolitical issue. This data, gathered by the UN High Commissioner for Refugees (UNHCR), covers movement of displaced persons (asylum seekers, refugees, internally displaced persons (IDP), stateless). Also included are destination country responses to asylum petitions.
+
+-Content:
+This dataset includes 6 csv files covering:
+
+1)Asylum monthly applications opened (asylum_seekers_monthly.csv) {매월 신청}
+2)Yearly progress through the refugee system (asylum_seekers.csv)
+3)Refugee demographics (demographics.csv)
+4)Yearly time series data on UNHCR’s populations of concern (time_series.csv)
+5)Yearly population statistics on refugees by residence and destination (persons_of_concern.csv)
+6)Yearly data on resettlement arrivals, with or without UNHCR assistance (resettlement.csv)
+
+-Acknowledgements:
+This dataset was gathered from UNHCR. Photo by Ali Tareq.
+
+-Inspiration:
+What are the most frequent destination countries for refugees?
+How has refugee flow changed?
+Any trends that could predict future refugee patterns?
+
+
+####데이터세트 설명
+1)asylum_seekers_monthly.csv: Asylum monthly applications opened ( {매월 신청}
+-파일설명: (2000-2016) Yearly progress of asylum-seekers through the refugee status determination process, with data on UNHCR assistance.
+
+문자)Country / territory of asylum/residence
+문자)Origin
+숫자)Year
+문자)Month
+숫자)Value
+
+2)asylum_seekers.csv: Yearly progress through the refugee system
+-파일설명: (2000-2016) Yearly progress of asylum-seekers through the refugee status determination process, with data on UNHCR assistance.
+
+숫자)Year
+문자)Country / territory of asylum/residence
+문자)Origin
+문자)RSD procedure type / level
+숫자)Tota pending start-year
+숫자)of which UNHCR-assisted(start-year)
+숫자)Applied during year
+숫자)decisions_recognized
+숫자)decisions_other
+숫자)Rejected
+숫자)Otherwise closed
+숫자)Total decisions
+숫자)Total pending end-year
+숫자)of which UNHCR-assisted(end-year)
+
+3)demographics.csv: Refugee demographics
+-파일설명: (2001-2016) Information on refugees according to residence territory, broken down by regional level, age, and gender demographics. Warning-may be incomplete or otherwise conflict with persons_of_concern.csv and time_series.csv.
+
+숫자)Year
+문자)Country / territory of asylum/residence
+문자)Location Name
+숫자)Female 0-4
+문자)Female 5-11
+숫자)Female 5-17
+문자)Female 12-17
+숫자)Female 18-59
+숫자)Female 60+
+숫자)F: Unknown
+숫자)F: Total
+숫자)Male 0-4
+문자)Male 5-11
+숫자)Male 5-17
+문자)Male 12-17
+숫자)Male 18-59
+숫자)Male 60+
+숫자)M: Unknown
+숫자)M: Total
+
+4)time_series.csv: Yearly time series data on UNHCR’s populations of concern 
+-파일설명: (1951-2016) Yearly population statistics on refugee movement changes from an origin to a destination.
+
+숫자)Year
+문자)Country / territory of asylum/residence
+문자)Origin
+문자)Population type
+숫자)Value
+
+5)persons_of_concern.csv: Yearly population statistics on refugees by residence and destination
+-파일설명: (1951-2016) Yearly time series information on UNHCR’s populations of concern for a given year and country of residence with origin.
+
+숫자)Year
+문자)Country / territory of asylum/residence
+문자)Origin
+숫자)Refugees (incl. refugee-like situations)
+문자)Asylum-seekers (pending cases)
+문자)Returned refugees
+문자)Internally displaced persons (IDPs)
+문자)Returned IDPs
+문자)Stateless persons
+문자)Others of concern
+숫자)Total Population
+
+6)resettlement.csv: Yearly data on resettlement arrivals, with or without UNHCR assistance
+-파일설명: (1959-2016) Yearly data on resettlement arrivals, with or without UNHCR assistance, and should exclude humanitarian admissions.
+
+문자)Country / territory of asylum/residence
+문자)Origin
+숫자)Year
+숫자)Value
+
